@@ -1,0 +1,263 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url(./image/pexels-asifmethar-760645.jpg); */
+   background-color: #ecf0f3;
+   /* background-color: lightgray; */
+    background-size: cover;
+    color:black;
+}
+.container{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.container h1{
+    text-indent: 30px;
+    letter-spacing: 3PX;
+}
+.menu a{
+    text-decoration: none;
+    /* background-color: aqua; */
+    width: 110px;
+    text-align: center;
+    color:black;
+    padding: 7px;
+    font-size: 20px;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    align-items: center;
+}
+.line{
+    display: none;
+}
+.container1{
+    /* background-color:red; */
+    /* margin-top: 10px; */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.names{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+.searc {
+    display: flex;
+   
+    /* background-color: aqua; */
+    width: 30%;
+}
+.names .searc button{
+         width: 80px;   
+         box-shadow: none;
+         /* border: 1px solid black ; */
+         border-top-right-radius: 10px;
+         border-bottom-right-radius: 10px;
+         border-left: none;
+         /* box-shadow:  8px 8px 2px #cbced1,
+         inset -8px -4px 8px #ffffff; */
+}
+.searc input{
+    position:relative;
+    width: 80%;
+    height: 40px;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+    border: none;
+    font-size: 20px;
+    border-right: none;
+    /* border-end-end-radius: none; */
+    outline: none;
+    text-indent: 10px;
+    /* box-shadow: inset 8px 4px 8px #cbced1,
+    inset -8px -4px 8px #ffffff; */
+}
+
+.names button{
+    width: 10%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow:inset 8px 4px 8px #cbced1,
+    inset -8px -4px 8px #ffffff;
+color: rgb(144, 88, 47);
+border: none;
+}
+.profile{
+    display: flex;
+    justify-content: end;
+    width: 30%;
+    gap: 30px;
+    /* background-color: aqua; */
+    padding-right: 10px;
+}
+.profile button{
+    border-radius: 100%;
+    
+}
+.content{
+    display: flex;
+    overflow: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 13px;
+    width: 98%;
+    height: 82vh;
+    /* background-color: aqua; */
+    overflow: auto;
+}
+.slider img{
+    width:700px;
+    height: 70vh;
+    display: none;
+    border-radius: 10px 40px ;
+    box-shadow: 8px 5px 7px grey;
+}
+.active img{
+    display: block;
+    animation: fade 0.7s;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transition: opacity linear;
+    }
+}
+.slide{
+    position: relative;
+}
+.slidebtn{
+    /* background-color:red; */
+    position: absolute;
+    visibility: hidden;
+   background: transparent;
+    width: 100%;
+    top: 50%;
+    transform: translatey(-50%);
+    display: flex;
+     justify-content: space-between;
+}
+.slidebtn img{
+    width: 30px;
+    padding: 2px;
+} 
+
+.slidebtn button{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    width: 35px;
+    border: 1px solid gray;
+    cursor: pointer;
+    height: 37px;
+    /* line-height: 30px; */
+}
+.slide:hover .slidebtn{
+   visibility: visible;
+}
+
+.click-active{
+    background-color: #ffffff;
+}
+.clicks {
+    position: absolute;
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    bottom: 15px;
+    left:43%;
+    cursor: pointer;
+    /* background: transparent; */
+    /* backdrop-filter: blur(20px); */
+    background-color:grey;
+    box-shadow: 2px 2px 3px ;
+    height: 3px;
+    width: 30px;
+}
+.company{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    gap: 20px;
+}
+.logo{
+    margin-left:25%;
+    width: 200px;
+    height: 200px;
+}
+.company p{
+    letter-spacing: 1px;
+}
+.accessbar{
+    display: none;
+    position: absolute;
+    /* display: flex; */
+    right: 15px;
+    top: 17.5%;
+    flex-direction: column;
+    background-color: #ecf0f3;
+    /* background-color: grey; */
+    width: 17%;
+    height: 80vh;
+    justify-content: space-around;
+    box-shadow: 8px 4px 8px #cbced1,
+     -8px -4px 8px #ffffff;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+    /* background: transparent; */
+    /* backdrop-filter: blur(30px); */
+    animation-name: cross ;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+@keyframes cross{
+    0%{
+    top: -600px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 0%;
+        opacity: 0.5;
+    }
+}
+.accessbar a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color:black;
+    margin-left: 10px;
+}
+.accessbar button{
+     background: transparent;
+    padding: 10px;
+    width: 90%;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    border-radius: 10px;
+    transition: 500ms;
+}
+.accessbar button:hover{
+    scale: 1.1;
+    box-shadow:inset 8px 4px 8px #cbced1,
+    inset -8px -4px 8px #ffffff;
+    border: none;
+    background-color: #ffffff;
+}

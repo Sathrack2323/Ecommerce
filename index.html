@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>SHOPPY</h1>
+        <div id="menus" class="menu">
+            <a href="" onclick="hand()">HOME</a>
+            <a href="">PRODUCT</a>
+           <a href="">ABOUT</a>
+           <a href="">CONTACT</a>
+           <img class="line" src="./css/image/134216_menu_lines_hamburger_icon.png" width="50px" height="50px" alt="menu">
+        </div>
+    </div>
+    <div class="container1">
+        <div class="names">
+            <button onclick="loadpage('dell')">Dell</button>
+            <button onclick="loadpage('hp')">Hp</button>
+            <button onclick="loadpage('lenovo')">Lenovo</button>
+            <button onclick="loadpage('mac')" >Mac</button>
+            <div class="searc">
+            <input type="search" placeholder="search">
+            <button>search</button>
+        </div>
+        </div>
+        <div class="profile">
+            <div id="mess" >
+                
+            </div>
+           <button  onclick="hidemenu()"> <img  src="./css/image/user (1).png" width="50px" height="50px" alt="user"></button>
+            <img  src="./css/image/126588_cart_empty_buy_shopping_ecommerce_icon.png" width="50px" height="50px" alt="">
+        </div> 
+    </div>
+    <div id="content" class="content">
+        <div class="slide">
+        <div class="slidebtn">
+            <button id="prev"><img src="./css/left-arrow.png" alt=""></button>
+            <button id="next"><img src="./css/right-arrow.png" alt=""></button>
+        </div>
+        <div  class="clicks">
+            <!-- <button id="btn1"></button>
+            <button id="btn2"></button>
+            <button id="btn3"></button>
+            <button id="btn4"  class="click-active"  ></button> -->
+          
+        </div>
+            <div id="slider" class="slider">
+                <div  id="slider1" class="slider-item ">
+                    <img src="./css/image/laptop/1.jpg"  alt="image">
+                </div>
+                <div  id="slider2"  class="slider-item"> 
+                     <img src="./css/image/laptop/10.jpg"  alt="image">
+                    </div>
+                <div  id="slider3"  class="slider-item "> 
+                    <img src="./css/image/laptop/11.jpg" alt="image">
+                </div>
+                <div  id="slider4"  class="slider-item active">
+                    <img src="./css/image/laptop/13.jpg"  alt="image">
+                </div>
+            </div>
+        </div>
+        <div class="company">
+            <img class="logo" src="./css/logo.png" width="250px" height="250px" alt="logo">
+            <h1>SHOPPY</h1>
+            <p>Lorem, ventore voluptatem. Incidunt, adipisci esse itaque quod quis debitis quibusdam aliquam ut dolores necessitatibus, ratione tenetur officiis accusantium nobis ab qui quas nisi, dolorum eaque natus. Omnis, animi eius, totam accusantium ratione nam est pariatur earum nesciunt quaerat ducimus expedita dignissimos ab saepe consequatur nobis neque alias natus! Obcaecati, voluptas.</p>
+            <div class="folow">
+                <img src="./css/image/world-wide-web.png" width="60px" height="60px" alt="">
+                <img src="./css/image/5279112_camera_instagram_social media_instagram logo_icon.png" width="60px" height="60px" alt="">
+                <img src="./css/image/843786_whatsapp_icon.png" width="60px" height="60px" alt="">
+                <img src="./css/image/104498_facebook_icon.png" width="60px" height="60px" alt="">
+            </div>
+        </div>
+    </div>
+   
+    <div id="hide" class="accessbar">
+       <button>profile</button>
+       <button>acconts</button>
+       <button>adress</button>
+       <button>card detail</button>
+       <button>customer</button>
+       <button>support</button>
+       <button>your points</button>
+       <button>cupons</button>
+       <h2>hrllo</h2>
+       <button onclick="logout()">logout <img src="./css/fast-forward.png" width="30px" height="30px" alt="log out"></button>
+    </div>
+    
+    <script  src="./app.js"></script>
+</body>
+</html>

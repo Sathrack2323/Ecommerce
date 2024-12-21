@@ -1,0 +1,174 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  position: relative;
+  background-color: #ecf0f3;
+  color: black;
+  height: 100vh;
+  width: 100%;
+  }
+  .round{
+    position: absolute;
+    /* border-radius: 100%; */
+    /* border-right: 2px solid yellow; */
+    width:100px;
+    height:100px;
+    background-color: #ecf0f3;
+    box-shadow:  8px 4px 8px #cbced1,
+     -8px -4px 8px #ffffff;
+    top: 10%;
+    right: 20%;
+}
+.round2{
+  position: absolute;
+  /* border-radius: 100%; */
+  bottom:5%;
+  left: 5.6%;
+  /* border-top:2px solid yellow; */
+  width:50px;
+  height:50px;
+  background-color: #ecf0f3;
+  box-shadow: inset 8px 4px 8px #cbced1,
+  inset  -8px -4px 8px #ffffff;
+  animation-name: round;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+@keyframes round{
+  0%{
+    left:96%;
+    opacity: 1;
+  }
+  25%{
+    opacity: 0;
+  }
+  50%{
+    width: 30%;
+    height: 5px;
+  }
+  75%{
+    opacity: 0;
+  }
+  100%{
+    left: -30px;
+    right: 0px;
+  }
+}
+.round3{
+  position: absolute;
+  /* border-radius: 100%; */
+  top:5%;
+  right: 5.6%;
+  /* border-top:2px solid yellow; */
+  width:50px;
+  height:50px;
+  background-color: #ecf0f3;
+  box-shadow: inset 8px 4px 8px #cbced1,
+  inset  -8px -4px 8px #ffffff;
+  animation-name: round;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+.round1{
+    position: absolute;
+    /* border-radius: 100%; */
+    bottom: 10%;
+    left: 20%;
+    /* border-left:2px solid yellow; */
+    width:100px;
+    height:100px;
+    background-color: #ecf0f3;
+    box-shadow:  8px 4px 8px #cbced1,
+     -8px -4px 8px #ffffff;
+}
+  input:hover {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: large;
+    /* text-shadow: 1px 3px 1px gold; */
+    /* box-decoration-break: slice; */
+  }
+  h1 {
+    text-align: center;
+  }
+  label {
+    display: inline;
+    font-size: 20px;
+    letter-spacing: 4px;
+  }
+  input {
+    /* background: transparent; */
+    color: black;
+    display: flex;
+    justify-content: center;
+    box-shadow:inset 8px 4px 8px #cbced1,
+    inset -8px -4px 8px #ffffff;
+    align-items: center;
+    width: 90%;
+    margin: 10px;
+    border: none;
+    outline: none;
+    padding: 13px;
+    border-radius: 10px;
+    /* box-shadow: 2px 3px 2px grey; */
+  }
+  .signup {
+    box-shadow: 8px 4px 8px #cbced1,
+    -8px -4px 8px #ffffff;
+    color: black;
+    top: 10%;
+    left: 35%;
+    width: 30%;
+    border-radius: 10px;
+    padding: 20px;
+    height: 80vh;
+    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+  .botn {
+    width: 50%;
+    /* background-color: aqua; */
+  }
+  .detail {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 2px;
+  }
+  .detail input {
+    width: 25px;
+    height: 25px;
+    box-shadow: none;
+  }
+  button {
+    background: transparent;
+    /* background-color: black; */
+    box-shadow: 2px 5px 1px grey;
+    /* color: aliceblue; */
+    color: rgb(112, 116, 116);
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    text-align: center;
+    margin-left: 140px;
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+  }

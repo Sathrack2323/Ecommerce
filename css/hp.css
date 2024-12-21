@@ -1,0 +1,102 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* background-color: aquamarine; */
+    /* background-image: url(./image/pexels-asifmethar-760645.jpg); */
+    background-size: cover;
+    color:black;
+   backdrop-filter: blur(20px);
+   background-color:#ecf0f3;
+
+}
+h1{
+  text-align: center;
+  font-size: 50px;
+  margin: 10px;
+  letter-spacing: 5px;
+  color: gold;
+}
+.hp{
+    /* background-image: url(./image/pexels-luis-zheji-628973-2612208.jpg); */
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+     gap: 30px;
+    /* margin-left: 15px; */
+}
+.hp0{
+    /* background-image: url(./image/pexels-asifmethar-760645.jpg); */
+    background-color:#ecf0f3;
+    /* background-color:white; */
+    /* background-color: #fefae0; */
+    transition: 700ms;
+    display: flex;
+    flex-direction: column;
+    width: 21%;
+    padding: 10px;
+    box-shadow: 6px 8px 5px #cbced1,
+                -8px -8px 5px #ffffff;
+    gap: 10px;
+    font-size: 19px;
+    border-radius: 10px;
+    /* background: transparent; */
+    /* backdrop-filter: blur(10px); */
+    border: 2px solid whitesmoke;
+}
+.hp0 img:hover{
+    scale: 1.2;
+    z-index: 1;
+    /* box-shadow: -1px -1px 10px gold,
+                2px 2px 10px  rgb(204, 179, 55); */
+}
+
+.hp0 h4{
+    text-align: center;
+    font-weight:bolder;
+    letter-spacing: 1px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color: rgb(46, 41, 12);
+}
+p{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 17px;
+}
+.btn{
+    display: flex;
+    gap: 15px;
+    backdrop-filter: blur(10px);
+    background: transparent;
+}
+button{
+    /* background: transparent; */
+    box-shadow:inset 8px 4px 8px #cbced1,
+               inset -8px -4px 8px #ffffff;
+    backdrop-filter: 10px;
+    width: 45%;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+}
+button:hover{
+    /* background-color: brown; */
+    scale: 1.1;
+    color: rgb(34, 180, 34);
+}
+.cart:hover {
+    color: red;
+}
+.hp0 img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 500ms;
+}

@@ -1,0 +1,130 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100vh;
+    color: black;
+    background-color: #ecf0f3;
+}
+.round{
+    position: absolute;
+    /* border-radius: 100%; */
+    top: 5%;
+    left: 30%;
+    border-right: 1px solid yellow;
+    width: 10px;
+    height: 50vh;
+    background-color: #ecf0f3;
+    box-shadow: inset 8px 4px 8px #cbced1,
+    inset  -8px -4px 8px #ffffff;
+}
+.round1{
+    position: absolute;
+    /* border-radius: 100%; */
+    bottom: 5%;
+    right: 30%;
+    border-left:2px solid yellow;
+    width: 10px;
+    height: 50vh;
+    background-color: #ecf0f3;
+    box-shadow: inset 8px 4px 8px #cbced1,
+    inset  -8px -4px 8px #ffffff;
+}
+h1{
+    text-align: center;
+}
+.container{
+    width: 30%;
+    height: 75vh;
+    background-color: aqua;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 8px 4px 8px #cbced1,
+     -8px -4px 8px #ffffff;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: start;
+    gap: 10px;
+    padding: 10px;
+}
+.login input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color:rgb(53, 29, 29);
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow:inset 8px 4px 8px #cbced1,
+    inset -8px -4px 8px #ffffff;
+    /* background: transparent; */
+    backdrop-filter: blur(10px);
+}
+input:hover{
+    outline: none;
+    border: none;
+    font-size: large;
+    background: transparent;
+}
+.log{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+a{
+    text-align: end;
+    text-decoration: none;
+    color:black;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+label{
+    text-align: start;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.checkbox{
+    display: flex;
+    gap: 2px;
+}
+.checkbox input{
+    box-shadow: none;
+    cursor: pointer;
+    width: 40px;
+    height: 20px;
+}
+.acco{
+    width: 150px;
+    font-size: small;
+    box-shadow: none;
+}
+button{
+    width: 30%;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 2px grey;
+    color:black;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
